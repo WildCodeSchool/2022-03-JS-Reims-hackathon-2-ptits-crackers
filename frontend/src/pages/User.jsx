@@ -2,6 +2,7 @@
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import papa from "papaparse";
+import Calendar from "@components/Calendar";
 
 export default function User() {
   const [users, setUsers] = useState([]);
@@ -25,6 +26,7 @@ export default function User() {
   }, []);
   return (
     <>
+      <Calendar />
       <h1 className="text-3xl font-bold underline">Hello les users</h1>
       <p>
         Voir <Link to="/">Home</Link>
