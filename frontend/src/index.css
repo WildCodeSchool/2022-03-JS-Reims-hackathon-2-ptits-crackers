@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.scrool-container {
+  overflow-y: scroll;
+}
+
+.notif-list-item {
+  padding: 0.5rem;
+}
+
+.text-notif {
+  font-size: 0.8rem;
+  color: #183650;
+}

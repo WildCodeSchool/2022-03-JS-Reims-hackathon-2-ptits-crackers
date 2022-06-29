@@ -2,6 +2,7 @@
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import papa from "papaparse";
+import NotifList from "../components/NotifList";
 
 export default function User() {
   const [users, setUsers] = useState([]);
@@ -23,6 +24,7 @@ export default function User() {
       .then((text) => papa.parse(text))
       .then((data) => prepareDataForUsers(data.data));
   }, []);
+
   return (
     <>
       <h1 className="text-3xl font-bold underline">Hello les users</h1>
@@ -32,6 +34,7 @@ export default function User() {
       <p>
         Voir <Link to="/project">Projet</Link>
       </p>
+      <NotifList />
       <h1 className="border-4">Users</h1>
       <ul>
         {users.map((user) => (
