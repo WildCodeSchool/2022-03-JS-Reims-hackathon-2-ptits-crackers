@@ -1,3 +1,38 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "Hind-Light";
+  src: url(./assets/fonts/Hind-Light.ttf);
+}
+@font-face {
+  font-family: "Hind-Regular";
+  src: url(./assets/fonts/Hind-Regular.ttf);
+}
+@font-face {
+  font-family: "Hind-Medium";
+  src: url(./assets/fonts/Hind-Medium.ttf);
+}
+@font-face {
+  font-family: "Hind-SemiBold";
+  src: url(./assets/fonts/Hind-SemiBold.ttf);
+}
+@font-face {
+  font-family: "Hind-Bold";
+  src: url(./assets/fonts/Hind-Bold.ttf);
+}
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url(./assets/fonts/Montserrat-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "Montserrat-Italic";
+  src: url(./assets/fonts/Montserrat-Italic-VariableFont_wght.ttf);
+}
+
+@layer components {
+  .li-navbar {
+    @apply font-['Hind-Regular'] text-[1.5rem] font-medium p-[1.25rem] text-slate-50 hover:text-[#E89759] active:underline active:text-[#E89759] active:underline-offset-8;
+  }
+}
