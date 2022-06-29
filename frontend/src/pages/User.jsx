@@ -2,7 +2,7 @@
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import papa from "papaparse";
-import Calendar from "@components/Calendar";
+import Calendar from "../components/Calendar";
 
 export default function User() {
   const [users, setUsers] = useState([]);
