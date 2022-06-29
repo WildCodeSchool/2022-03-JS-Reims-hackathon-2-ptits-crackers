@@ -33,6 +33,6 @@
 
 @layer components {
   .li-navbar {
-    @apply font-['Hind-Regular'] text-[1.5rem] font-medium p-[1.25rem] text-slate-50 hover:text-[#E89759] active:underline active:text-[#E89759] active:underline-offset-8;
+    @apply font-['Hind-Regular'] text-[1.25rem] font-medium p-[1.25rem] text-slate-50 hover:text-[#E89759] hover:font-extrabold active:font-extrabold hover:underline active:text-[#E89759] hover:underline-offset-8;
   }
 }
