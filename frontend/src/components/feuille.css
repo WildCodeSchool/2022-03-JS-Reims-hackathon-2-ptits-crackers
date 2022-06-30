@@ -1,10 +1,11 @@
 .letter {
   background: #ffffff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  margin: 26px auto 0;
-  max-width: 750px;
+  margin: 26px 26px 0;
+  min-width: 750px;
   padding: 24px;
   position: relative;
+  height: 90vh;
 }
 
 .letter:before,
@@ -35,20 +36,7 @@
   -webkit-transform: rotate(1.4deg);
   -moz-transform: rotate(1.4deg);
 }
-.img1 {
-  box-shadow: 100px 260px 1px #ccc;
-  /* -moz-box-shadow: 50px 250px 1px #ccc;
-  -webkit-box-shadow: 50px 250px 1px #ccc;
-  -khtml-box-shadow: 50px 250px 1px #ccc; */
-}
 
-.img2 {
-  box-shadow: -130px -260px 1px #ccc;
-}
-/* -moz-box-shadow: -60px -230px 1px #ccc;
-  -webkit-box-shadow: -60px -230px 1px #ccc;
-  -khtml-box-shadow: -60px -230px 1px #ccc;
-} */
 .img3 {
   box-shadow: -100px 260px 1px #ccc;
   /* -moz-box-shadow: -50px 250px 1px #ccc;
