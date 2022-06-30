@@ -3,9 +3,50 @@
 @tailwind utilities;
 
 @font-face {
+  font-family: "andy";
+  src: url(./assets/fonts/andy.ttf);
+}
+
+.titles {
+  font-family: "andy";
+  font-size: 1.5rem;
+  padding: 1rem;
+  border-bottom: 5px solid #183650;
+  color: #183650;
+}
+
+.title {
+  font-family: "andy";
+  font-size: 2rem;
+  color: #183650;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.collonestableau {
+  border-right: 5px solid #183650;
+}
+
+.tableau {
+  border-radius: 5px;
+  border: 10px solid #adb2bd;
+  box-shadow: inset -1px 2px 2px #404040, 6px 9px 1px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 85%;
+  margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  height: 95vh;
+  overflow: scroll;
+  background-color: #f2f2f2;
+}
+
+@font-face {
   font-family: "Hind-Light";
   src: url(./assets/fonts/Hind-Light.ttf);
 }
+
 @font-face {
   font-family: "Hind-Regular";
   src: url(./assets/fonts/Hind-Regular.ttf);
@@ -29,6 +70,10 @@
 @font-face {
   font-family: "Montserrat-Italic";
   src: url(./assets/fonts/Montserrat-Italic-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "Andy";
+  src: url(./assets/fonts/andy.ttf);
 }
 
 @layer components {

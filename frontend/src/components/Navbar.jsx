@@ -8,11 +8,13 @@ export default function Navbar() {
         <p className="font-['Hind-Regular'] text-[1.5rem] font-medium p-[1.25rem] text-slate-50 text-center">
           Bonjour !
         </p>
-        <img
-          src="https://pixabay.com/photos/woman-business-fashion-young-3060784/"
-          alt="user"
-          className="rounded-full mt-8 mb-8"
-        />
+        <Link to="/user">
+          <img
+            src="https://pixabay.com/photos/woman-business-fashion-young-3060784/"
+            alt="user"
+            className="rounded-full mt-8 mb-8"
+          />
+        </Link>
         <ul className="flex flex-col items-center">
           <li className="li-navbar">
             <Link to="/">Board</Link>

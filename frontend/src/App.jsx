@@ -3,6 +3,7 @@ import Home from "./pages/Home";
 import User from "./pages/User";
 import Project from "./pages/Project";
 import SolarBreeze from "./components/SolarBreeze";
+import MyProjects from "./pages/MyProjects";
 
 import "./App.css";
 
@@ -14,6 +15,7 @@ function App() {
         <Route path="/user" element={<User />} />
         <Route path="/project" element={<Project />} />
         <Route path="/project/Solarbreeze" element={<SolarBreeze />} />
+        <Route path="/myprojects" element={<MyProjects />} />
       </Routes>
     </Router>
   );

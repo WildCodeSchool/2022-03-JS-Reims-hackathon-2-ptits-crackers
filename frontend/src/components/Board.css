@@ -1,0 +1,27 @@
+@import url(https://fonts.googleapis.com/css?family=Permanent+Marker);
+
+#content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+#white-board {
+  background-color: #f2f2f2;
+  position: relative;
+  width: 80%;
+  height: 80%;
+  border-radius: 5px;
+  border: 10px solid #adb2bd;
+  box-shadow: inset -1px 2px 2px #404040, 6px 9px 1px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.grammar {
+  margin: 0 auto;
+  height: 375px;
+  width: 600px;
+  border: solid 2px #1f75fe;
+}
