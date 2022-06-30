@@ -2,7 +2,7 @@ import "./PostIt.css";
 
 export default function Project() {
   return (
-    <section className="flex flex-wrap max-w-[70%] justify-center">
+    <section className="flex flex-wrap max-w-[100%] justify-center">
       <div className="postit">
         <article>
           <h3>EVOLION 3 SAFT</h3>

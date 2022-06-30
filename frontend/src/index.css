@@ -3,9 +3,33 @@
 @tailwind utilities;
 
 @font-face {
+  font-family: "andy";
+  src: url(./assets/fonts/andy.ttf);
+}
+
+.titles {
+  font-family: "andy";
+  font-size: 2rem;
+  padding: 1rem;
+  border-bottom: 5px solid #183650;
+  color: #183650;
+}
+
+.collonestableau {
+  border-right: 5px solid #183650;
+  background-color: #f5f0f0;
+}
+
+.tableau {
+  border: 20px ridge gray;
+  min-height: 100vh;
+}
+
+@font-face {
   font-family: "Hind-Light";
   src: url(./assets/fonts/Hind-Light.ttf);
 }
+
 @font-face {
   font-family: "Hind-Regular";
   src: url(./assets/fonts/Hind-Regular.ttf);
@@ -39,61 +63,4 @@
   .li-navbar {
     @apply font-['Hind-Regular'] text-[1.25rem] font-medium p-[1.25rem] text-slate-50 hover:text-[#E89759] hover:font-extrabold active:font-extrabold hover:underline active:text-[#E89759] hover:underline-offset-8;
   }
-  font-family: "andy";
-  src: url(./assets/fonts/andy.ttf);
-}
-
-.titles {
-  font-family: "andy";
-  font-size: 2rem;
-  padding: 1rem;
-  border-bottom: 5px solid #183650;
-}
-
-.colstart > li:nth-child(2n + 1) {
-  margin-right: auto;
-}
-
-.colstart > li:nth-child(2n) {
-  margin-left: auto;
-}
-
-.colcenter > li:nth-child(3n + 1) {
-  margin-left: auto;
-}
-
-.colcenter > li:nth-child(3n + 2) {
-  margin: auto;
-}
-
-.colcenter > li:nth-child(3n) {
-  margin-right: auto;
-}
-
-.colend > li:nth-child(3n + 1) {
-  margin-left: auto;
-}
-
-.colend > li:nth-child(3n) {
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.colend > li:nth-child(3n + 2) {
-  margin-right: auto;
-}
-
-.allimg > ul > li {
-  border: 2px solid #000;
-  border-radius: 25px;
-}
-
-.allimg > ul > li > img {
-  border-top-left-radius: 23px;
-  border-top-right-radius: 23px;
-}
-
-.tableau {
-  border: 20px ridge gray;
-  min-height: 100vh;
 }
