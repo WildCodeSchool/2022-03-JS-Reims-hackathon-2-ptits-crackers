@@ -2,7 +2,7 @@ export default function FirstFeuille() {
   return (
     <div className="letter ">
       <p className="text-slate-50 text-center bg-[#183650] p-4 m-2">
-        Nom du projet : SolarBreeze
+        Nom du projet : Pellenc
       </p>
 
       <div className="flex flex-col ">

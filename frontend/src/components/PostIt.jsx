@@ -26,7 +26,7 @@ export default function Project({ projet, move }) {
               <br />
               agence de {projet.agence}.
             </p>
-            <Link to="/project/Solarbreeze">
+            <Link to={`/project/${projet.name}`}>
               <p>{projet.description}</p>
             </Link>
             <button type="button" onClick={handleChange}>
