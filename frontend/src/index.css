@@ -54,6 +54,10 @@
   font-family: "Montserrat-Italic";
   src: url(./assets/fonts/Montserrat-Italic-VariableFont_wght.ttf);
 }
+@font-face {
+  font-family: "Andy";
+  src: url(./assets/fonts/andy.ttf);
+}
 
 @layer components {
   .li-navbar {

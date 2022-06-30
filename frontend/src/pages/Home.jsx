@@ -1,8 +1,11 @@
 /* eslint-disable no-return-assign */
 // import { Link } from "react-router-dom";
+
+import Navbar from "../components/Navbar";
+import PostIt from "../components/PostIt";
+
 // import { useState, useEffect } from "react";
 // import papa from "papaparse";
-import Navbar from "../components/Navbar";
 
 export default function Home() {
   // const [projects, setProjects] = useState([]);
@@ -30,6 +33,11 @@ export default function Home() {
     <div className="flex">
       <Navbar />
       {/* <h1 className="text-3xl font-bold underline">Hello les crackers</h1>
+    <>
+      <main className="flex flex-wrap">
+        <Navbar />
+      </main>
+      <h1 className="text-3xl font-bold underline">Hello les projets</h1>
       <p>
         Voir <Link to="/project">Projet</Link>
       </p>
@@ -48,6 +56,7 @@ export default function Home() {
         </div>
         <div className="w-1/4 collonestableau">
           <h1 className="text-center titles">Mes favoris</h1>
+          <PostIt />
         </div>
       </div>
     </div>
