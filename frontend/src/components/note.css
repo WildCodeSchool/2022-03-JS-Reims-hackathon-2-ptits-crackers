@@ -1,14 +1,13 @@
 .paper {
   --paper-dark: #e5c93d;
   --paper-color: #ffed87;
-  margin-top: 4rem;
+  margin-top: 3rem;
   margin-right: 5rem;
   position: relative;
   display: flex;
   justify-content: center;
   min-width: 350px;
-
-  min-height: 175px;
+  height: 175px;
   background: linear-gradient(
     135deg,
     var(--paper-dark),
@@ -130,14 +129,13 @@
 .paper1 {
   --paper-dark: #e5c93d;
   --paper-color: #ffed87;
-  margin-top: 5rem;
+  margin-top: 3rem;
   margin-right: 5rem;
   position: relative;
   display: flex;
   justify-content: center;
   min-width: 350px;
-
-  min-height: 175px;
+  height: 175px;
   background: linear-gradient(
     135deg,
     var(--paper-dark),

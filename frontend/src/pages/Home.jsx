@@ -6,10 +6,14 @@ import PostIt from "../components/PostIt";
 
 export default function Home() {
   const [projects, setProjects] = useState([]);
-  const [ville, setVille] = useState("Tour");
-  const project1 = projects.slice(0, 25);
-  const project2 = projects.filter((project) => project.agence === ville);
-  const project4 = projects.slice(75, 100);
+  const [ville, setVille] = useState("Paris");
+  const project1 = projects
+    .filter((project) => project.agence === "Paris")
+    .slice(0, 3);
+  const project2 = projects
+    .filter((project) => project.agence === ville)
+    .reverse();
+  const project4 = projects.slice(75, 81);
   const prepareDataForProjects = (data) => {
     const keys = data.shift();
     const json = data.map((line) => {
@@ -46,10 +50,15 @@ export default function Home() {
           <h1 className="text-center titles">
             Projets de
             <select value={ville} onChange={handleChange}>
-              <option value="Tour">mon agence</option>
-              <option value="Paris"> Paris</option>
+              <option value="Paris">mon agence</option>
+              <option value="Tour"> Tour</option>
               <option value="Lyon"> Lyon</option>
               <option value="Dijon"> Dijon</option>
+              <option value="Lille"> Lille</option>
+              <option value="Vernon"> Vernon</option>
+              <option value="Orléans"> Orléans</option>
+              <option value="Nice"> Nice</option>
+              <option value="Geneve"> Geneve</option>
             </select>
           </h1>
           {project2.map((project) => (

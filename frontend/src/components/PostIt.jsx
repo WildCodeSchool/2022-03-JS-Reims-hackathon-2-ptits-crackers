@@ -1,4 +1,6 @@
 /* eslint-disable react/prop-types */
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHeart } from "@fortawesome/free-regular-svg-icons";
 import "./PostIt.css";
 import { Link } from "react-router-dom";
 import { useState } from "react";
@@ -31,7 +33,10 @@ export default function Project({ projet, move, myprojet }) {
             </Link>
             {myprojet !== false && (
               <button type="button" onClick={handleChange}>
-                Ajouter aux favoris
+                <FontAwesomeIcon
+                  className={isDragged ? "changecolor" : ""}
+                  icon={faHeart}
+                />
               </button>
             )}
           </article>
