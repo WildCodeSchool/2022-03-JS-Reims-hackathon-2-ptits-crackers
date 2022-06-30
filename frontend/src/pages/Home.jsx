@@ -2,6 +2,7 @@
 import { Link } from "react-router-dom";
 // import { useState, useEffect } from "react";
 // import papa from "papaparse";
+import Navbar from "../components/Navbar";
 
 export default function Home() {
   // const [projects, setProjects] = useState([]);
@@ -27,7 +28,8 @@ export default function Home() {
   // }, []);
   return (
     <>
-      <h1 className="text-3xl font-bold underline">Hello les projets</h1>
+      <Navbar />
+      <h1 className="text-3xl font-bold underline">Hello les crackers</h1>
       <p>
         Voir <Link to="/project">Projet</Link>
       </p>
