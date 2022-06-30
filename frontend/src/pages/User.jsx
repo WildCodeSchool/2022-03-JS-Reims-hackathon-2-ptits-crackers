@@ -3,7 +3,7 @@
 // import papa from "papaparse";
 
 import Navbar from "../components/Navbar";
-import Calendar from "../components/Calendar";
+import Calendar1 from "../components/Calendar1";
 
 export default function User() {
   /* const [users, setUsers] = useState([]);
@@ -42,7 +42,7 @@ export default function User() {
             <h2>Rôle: Développeur</h2>
             <h2>Nombre projet participé(en fonction du role): 5</h2>
           </div>
-          <Calendar />
+          <Calendar1 />
         </div>
       </div>
       {/*
