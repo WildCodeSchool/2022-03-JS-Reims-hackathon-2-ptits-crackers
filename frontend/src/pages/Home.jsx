@@ -1,7 +1,7 @@
 /* eslint-disable no-return-assign */
-// import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import papa from "papaparse";
+// import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import PostIt from "../components/PostIt";
 
@@ -32,7 +32,7 @@ export default function Home() {
   return (
     <div className="flex">
       <Navbar />
-      <div className="flex flex-wrap tableau w-[100%]">
+      <div className="flex flex-wrap tableau">
         <div className="w-1/4 collonestableau">
           <h1 className="text-center titles">Mes projets</h1>
           {project1.map((project) => (
@@ -46,13 +46,13 @@ export default function Home() {
           ))}
         </div>
         <div className="w-1/4 collonestableau">
-          <h1 className="text-center titles">Projets recommandés</h1>
+          <h1 className="text-center titles">Mes favoris</h1>
           {project3.map((project) => (
             <PostIt projet={project} />
           ))}
         </div>
-        <div className="w-1/4 collonestableau">
-          <h1 className="text-center titles">Mes favoris</h1>
+        <div className="w-1/4">
+          <h1 className="text-center titles">Projets recommandés</h1>
           {project4.map((project) => (
             <PostIt projet={project} />
           ))}
