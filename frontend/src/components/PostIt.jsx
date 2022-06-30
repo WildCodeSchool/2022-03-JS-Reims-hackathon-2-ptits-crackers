@@ -1,10 +1,23 @@
 /* eslint-disable react/prop-types */
 import "./PostIt.css";
+import { Link } from "react-router-dom";
+import { useState } from "react";
 
-export default function Project({ projet }) {
+export default function Project({ projet, move }) {
+  const [isDragged, setIsDragged] = useState(false);
+  const handleChange = () => {
+    setIsDragged(!isDragged);
+  };
+
   return (
     <section className="flex flex-wrap max-w-[100%] justify-center">
-      <div className="postit">
+      <div
+        className={`postit ${
+          isDragged && move === "right"
+            ? "postitmove"
+            : isDragged && move === "left" && "postitmove2"
+        }`}
+      >
         {projet && (
           <article>
             <h3>{projet.name}</h3>
@@ -13,7 +26,12 @@ export default function Project({ projet }) {
               <br />
               agence de {projet.agence}.
             </p>
-            <p>{projet.description}</p>
+            <Link to="/project/Solarbreeze">
+              <p>{projet.description}</p>
+            </Link>
+            <button type="button" onClick={handleChange}>
+              Ajouter aux favoris
+            </button>
           </article>
         )}
       </div>
