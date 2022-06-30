@@ -1,7 +1,7 @@
 .paper {
   --paper-dark: #e5c93d;
   --paper-color: #ffed87;
-  margin-top: 5rem;
+  margin-top: 4rem;
   margin-right: 5rem;
   position: relative;
   display: flex;
@@ -147,4 +147,8 @@
   box-shadow: 3px 3px 2px var(--paper-shadow);
   transform: rotate(-3deg);
   transform-origin: top right;
+}
+
+h1 {
+  color: #e77620;
 }

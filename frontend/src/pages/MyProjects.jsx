@@ -32,7 +32,7 @@ export default function Home() {
       <div className="grid grid-cols-4 tableau">
         <h1 className="col-start-1 col-end-5 text-center title">Mes projets</h1>
         {project1.map((project) => (
-          <PostIt projet={project} />
+          <PostIt projet={project} myprojet={false} />
         ))}
       </div>
     </div>
