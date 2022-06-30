@@ -34,10 +34,7 @@ export default function FirstFeuille() {
           />
           <div className="flex flex-col">
             <h1 className=" text-center  ">Contexte du project</h1>
-            <p
-              className="m-5 text-sm font-light
-           "
-            >
+            <p className="m-5 text-sm font-light">
               Le Lorem Ipsum est simplement du faux texte employé dans la
               composition et la mise en page avant impression. Le Lorem Ipsum
               est le faux texte standard de l'imprimerie depuis les années 1500,

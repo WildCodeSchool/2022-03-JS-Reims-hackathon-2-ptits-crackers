@@ -4,20 +4,23 @@ import whiteLogo from "../assets/images/apside-logo.png";
 export default function Navbar() {
   return (
     <nav className="block min-w-[200px] h-screen bg-[#183650]">
-      <div className="flex flex-col justify-evenly">
-        <p className="font-['Hind-Regular'] text-[1.5rem] font-medium p-[1.25rem] text-slate-50 text-center">
+      <div className="flex flex-col justify-evenly items-center">
+        <p className="font-['Hind-Regular'] text-[1.5rem] font-medium pt-[2rem] text-slate-50 text-center">
           Bonjour !
         </p>
         <Link to="/user">
           <img
-            src="https://pixabay.com/photos/woman-business-fashion-young-3060784/"
+            src="https://robohash.org/quasiatet.png?size=100x100&set=set1"
             alt="user"
-            className="rounded-full mt-8 mb-8"
+            className="rounded-full my-4"
           />
         </Link>
         <ul className="flex flex-col items-center">
           <li className="li-navbar">
-            <Link to="/">Board</Link>
+            <Link to="/user">Mon profil</Link>
+          </li>
+          <li className="li-navbar">
+            <Link to="/">Mon tableau</Link>
           </li>
           <li className="li-navbar">
             <Link to="/myagency">Mon agence</Link>
