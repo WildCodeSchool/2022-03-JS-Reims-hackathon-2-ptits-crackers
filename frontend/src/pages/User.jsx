@@ -1,11 +1,12 @@
-/* eslint-disable no-return-assign */
-import { Link } from "react-router-dom";
-import { useState, useEffect } from "react";
-import papa from "papaparse";
+// import { Link } from "react-router-dom";
+// import { useState, useEffect } from "react";
+// import papa from "papaparse";
+
+import Navbar from "../components/Navbar";
 import Calendar from "../components/Calendar";
 
 export default function User() {
-  const [users, setUsers] = useState([]);
+  /* const [users, setUsers] = useState([]);
 
   const prepareDataForUsers = (data) => {
     const keys = data.shift();
@@ -23,17 +24,28 @@ export default function User() {
       .then((res) => res.text())
       .then((text) => papa.parse(text))
       .then((data) => prepareDataForUsers(data.data));
-  }, []);
+  }, []); */
   return (
     <>
-      <Calendar />
-      <h1 className="text-3xl font-bold underline">Hello les users</h1>
-      <p>
-        Voir <Link to="/">Home</Link>
-      </p>
-      <p>
-        Voir <Link to="/project">Projet</Link>
-      </p>
+      <div className="flex">
+        <Navbar />
+        <div className="flex justify-around w-[100%]">
+          <div className="h-60 text-center mt-4 border-double border-4 border-blue-900 p-1 flex flex-col content-center">
+            <h1>Compte</h1>
+            <img
+              src="https://picsum.photos/seed/picsum/200/200"
+              alt=""
+              className="border-2 border-blue-900 content-center w-14 "
+            />
+            <h2>Nom: Lepetit</h2>
+            <h2>Prénom: Crackers</h2>
+            <h2>Rôle: Développeur</h2>
+            <h2>Nombre projet participé(en fonction du role): 5</h2>
+          </div>
+          <Calendar />
+        </div>
+      </div>
+      {/*
       <h1 className="border-4">Users</h1>
       <ul>
         {users.map((user) => (
@@ -42,6 +54,7 @@ export default function User() {
           </li>
         ))}
       </ul>
+    */}
     </>
   );
 }
