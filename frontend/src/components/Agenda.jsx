@@ -5,7 +5,7 @@ export default function Agenda() {
   return (
     <div className="flex ">
       <Navbar />
-      <div className="tableau p-4 pt-10">
+      <div className="tableau p-4 pt-5">
         <h1 className="p-5 text-center text-2xl">Agenda</h1>
         <DayPilotCalendar days={7} scale="Day" />
       </div>

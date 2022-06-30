@@ -10,10 +10,10 @@ export default function FirstFeuille() {
           <img
             src="https://picsum.photos/id/3/250/300"
             alt="logo"
-            className="img3 w-40 h-52 ml-16 m-5"
+            className="img3 w-40 h-52 ml-16 m-8"
           />
           <div className="flex flex-col ">
-            <h1 className="text-center m-2 ">Objectifs du project</h1>
+            <h1 className="text-center m-8 ">Objectifs du project</h1>
 
             <p className="m-2 z-20 text-sm font-light">
               Le Lorem Ipsum est simplement du faux texte employé dans la
@@ -26,15 +26,18 @@ export default function FirstFeuille() {
             </p>
           </div>
         </div>
-        <div className="flex flex-row m-6">
+        <div className="flex flex-row m-10">
           <img
             src="https://picsum.photos/id/4/250/300"
             alt="logo"
-            className="img4 w-40 h-52 mt-16 mr-10 "
+            className="img4 w-40 h-52 mt-8 mr-10 "
           />
           <div className="flex flex-col">
-            <h1 className=" text-center ">Contexte du project</h1>
-            <p className="m-2 text-sm font-light ">
+            <h1 className=" text-center  ">Contexte du project</h1>
+            <p
+              className="m-5 text-sm font-light
+           "
+            >
               Le Lorem Ipsum est simplement du faux texte employé dans la
               composition et la mise en page avant impression. Le Lorem Ipsum
               est le faux texte standard de l'imprimerie depuis les années 1500,
