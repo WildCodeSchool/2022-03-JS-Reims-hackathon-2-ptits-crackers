@@ -1,10 +1,10 @@
 .postit {
   line-height: 1;
   text-align: center;
-  width: 275px;
+  width: 200px;
   margin: 25px;
-  min-height: 250px;
-  max-height: 250px;
+  min-height: 200px;
+  max-height: 200px;
   padding-top: 35px;
   position: relative;
   border: 1px solid #e8e8e8;
@@ -60,13 +60,14 @@
   ); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffff88', endColorstr='#ffffc6',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
+
 .postit:after {
   content: "";
   position: absolute;
   z-index: -1;
   right: -0px;
   bottom: 20px;
-  width: 200px;
+  width: 180px;
   height: 25px;
   background: rgba(0, 0, 0, 0.2);
   box-shadow: 2px 15px 5px rgba(0, 0, 0, 0.4);
@@ -75,4 +76,26 @@
   -o-transform: matrix(-1, -0.1, 0, 1, 0, 0);
   -ms-transform: matrix(-1, -0.1, 0, 1, 0, 0);
   transform: matrix(-1, -0.1, 0, 1, 0, 0);
+}
+
+.postit article {
+  position: absolute;
+  z-index: 1;
+  bottom: 30%;
+}
+
+.postit h3 {
+  font-size: 1rem;
+  font-weight: bold;
+  color: black;
+  margin: 0;
+  padding: 0;
+}
+
+.postit p {
+  font-size: 0.8rem;
+  color: black;
+  margin: 0;
+  padding: 0.25rem;
+  font-family: "Hind-Regular";
 }
