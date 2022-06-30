@@ -5,14 +5,18 @@ import "./PostIt.css";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
-export default function Project({ projet, move, myprojet }) {
+export default function Project({ projet, move, myprojet, right, left }) {
   const [isDragged, setIsDragged] = useState(false);
   const handleChange = () => {
     setIsDragged(!isDragged);
   };
 
   return (
-    <section className="flex flex-wrap max-w-[100%] justify-center">
+    <section
+      className={`flex flex-wrap max-w-[100%] justify-center ${
+        right && "rotateRight"
+      } ${left && "rotateLeft"}`}
+    >
       <div
         className={`postit ${
           isDragged && move === "right"

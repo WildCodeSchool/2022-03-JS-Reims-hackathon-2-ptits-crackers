@@ -1,4 +1,3 @@
-import { DayPilotCalendar } from "@daypilot/daypilot-lite-react";
 import Navbar from "./Navbar";
 
 export default function Agenda() {
@@ -7,7 +6,7 @@ export default function Agenda() {
       <Navbar />
       <div className="tableau p-4">
         <h1 className="p-5 text-center text-2xl">Agenda</h1>
-        <DayPilotCalendar days={7} scale="Day" />
+        {/* <DayPilotCalendar days={7} scale="Day" /> */}
       </div>
     </div>
   );
