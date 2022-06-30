@@ -31,9 +31,13 @@ export default function Home() {
       <Navbar />
       <div className="grid grid-cols-4 tableau">
         <h1 className="col-start-1 col-end-5 text-center title">Mes projets</h1>
-        {project1.map((project) => (
-          <PostIt projet={project} myprojet={false} />
-        ))}
+        {project1.map((project, index) =>
+          index % 3 === 0 ? (
+            <PostIt projet={project} myprojet={false} left />
+          ) : (
+            <PostIt projet={project} myprojet={false} right />
+          )
+        )}
       </div>
     </div>
   );

@@ -1,0 +1,44 @@
+.container {
+  position: absolute;
+  margin-left: 40rem;
+  margin-top: 6rem;
+  transform: translate(-50%, -50%);
+}
+.frame {
+  width: 175px;
+  background: #666;
+  border: 10px solid #666;
+}
+.frame__in {
+  width: 100%;
+  height: 150px;
+  background: #ccc;
+  border-width: 20px;
+  border-style: solid;
+  border-color: #555 #888 #555 #888;
+}
+.hovertext {
+  position: relative;
+}
+
+.hovertext:before {
+  content: attr(data-hover);
+  visibility: hidden;
+  opacity: 0;
+  width: 140px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px 0;
+  transition: opacity 1s ease-in-out;
+  position: absolute;
+  z-index: 1;
+  left: -20px;
+  top: 110%;
+}
+
+.hovertext:hover:before {
+  opacity: 1;
+  visibility: visible;
+}
