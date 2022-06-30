@@ -1,6 +1,5 @@
 /* eslint-disable no-return-assign */
-// import { Link } from "react-router-dom";
-
+import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import PostIt from "../components/PostIt";
 
@@ -30,12 +29,10 @@ export default function Home() {
   //     .then((data) => prepareDataForProjects(data.data));
   // }, []);
   return (
-    <div className="flex">
-      <Navbar />
-      {/* <h1 className="text-3xl font-bold underline">Hello les crackers</h1>
     <>
       <main className="flex flex-wrap">
         <Navbar />
+        <PostIt />
       </main>
       <h1 className="text-3xl font-bold underline">Hello les projets</h1>
       <p>
@@ -43,23 +40,22 @@ export default function Home() {
       </p>
       <p>
         Voir <Link to="/user">Users</Link>
-      </p> */}
-      <div className="flex flex-wrap tableau w-[100%]">
-        <div className="w-1/4 collonestableau">
-          <h1 className="text-center titles">Mes projets</h1>
+      </p>
+      <div className="flex flex-wrap tableau">
+        <div className="w-1/4">
+          <h1 className="text-center titles">Projets en cours</h1>
         </div>
-        <div className="w-1/4 collonestableau">
+        <div className="w-1/4">
+          <h1 className="text-center titles">Projets en recommandés</h1>
+        </div>
+        <div className="w-1/4">
+          <h1 className="text-center titles">Projets favoris</h1>
+        </div>
+        <div className="w-1/4">
           <h1 className="text-center titles">Projets de mon agence</h1>
         </div>
-        <div className="w-1/4 collonestableau">
-          <h1 className="text-center titles">Projets recommandés</h1>
-        </div>
-        <div className="w-1/4 collonestableau">
-          <h1 className="text-center titles">Mes favoris</h1>
-          <PostIt />
-        </div>
       </div>
-    </div>
+    </>
   );
 
   //   <div className="allimg grid grid-cols-3">
