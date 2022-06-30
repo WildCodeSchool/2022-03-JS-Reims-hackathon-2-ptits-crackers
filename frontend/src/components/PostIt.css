@@ -1,14 +1,16 @@
 .postit {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
   line-height: 1;
   text-align: center;
   width: 200px;
   margin: 25px;
   min-height: 200px;
   max-height: 200px;
-  padding-top: 35px;
   position: relative;
   border: 1px solid #e8e8e8;
-  border-top: 60px solid #fdfd86;
+  /* border-top: 60px solid #fdfd86; */
   font-family: "Reenie Beanie";
   font-size: 22px;
   border-bottom-right-radius: 60px 5px;
@@ -79,10 +81,9 @@
 }
 
 .postit article {
-  position: absolute;
+  /* position: absolute; */
   z-index: 1;
-  bottom: 30%;
-  padding: 0.5rem;
+  padding: 10px;
 }
 
 .postit h3 {

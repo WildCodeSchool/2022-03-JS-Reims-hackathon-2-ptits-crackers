@@ -1,22 +1,21 @@
+/* eslint-disable react/prop-types */
 import "./PostIt.css";
 
-export default function Project() {
+export default function Project({ projet }) {
   return (
     <section className="flex flex-wrap max-w-[100%] justify-center">
       <div className="postit">
-        <article>
-          <h3>EVOLION 3 SAFT</h3>
-          <p className="italic">
-            Ingénierie industrielle,
-            <br />
-            agence de Bordeaux.
-          </p>
-          <p>
-            Saft Batteries a décidé de rénover son système Evolion, contraction
-            de « evolution » et « Li-ion », avec une troisième génération plus
-            performante, plus sûre et plus maintenable.
-          </p>
-        </article>
+        {projet && (
+          <article>
+            <h3>{projet.name}</h3>
+            <p className="italic">
+              {projet.categorie},
+              <br />
+              agence de {projet.agence}.
+            </p>
+            <p>{projet.description}</p>
+          </article>
+        )}
       </div>
     </section>
   );
