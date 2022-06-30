@@ -1,7 +1,7 @@
 import Navbar from "./Navbar";
 import PageList from "./PageList";
 
-export default function SolarBreeze() {
+export default function Pellenc() {
   return (
     <div className="flex ">
       <Navbar />
