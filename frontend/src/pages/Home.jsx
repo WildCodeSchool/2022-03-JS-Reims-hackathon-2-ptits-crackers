@@ -39,7 +39,7 @@ export default function Home() {
         <div className="w-1/4 collonestableau">
           <h1 className="text-center titles">Mes projets</h1>
           {project1.map((project) => (
-            <PostIt projet={project} move="right" />
+            <PostIt projet={project} myprojet={false} />
           ))}
         </div>
         <div className="w-1/4 collonestableau">
@@ -53,7 +53,7 @@ export default function Home() {
             </select>
           </h1>
           {project2.map((project) => (
-            <PostIt projet={project} />
+            <PostIt projet={project} move="right" />
           ))}
         </div>
         <div className="w-1/4 collonestableau">

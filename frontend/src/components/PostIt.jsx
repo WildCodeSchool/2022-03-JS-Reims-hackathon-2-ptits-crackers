@@ -3,7 +3,7 @@ import "./PostIt.css";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
-export default function Project({ projet, move }) {
+export default function Project({ projet, move, myprojet }) {
   const [isDragged, setIsDragged] = useState(false);
   const handleChange = () => {
     setIsDragged(!isDragged);
@@ -29,9 +29,11 @@ export default function Project({ projet, move }) {
             <Link to="/project/Solarbreeze">
               <p>{projet.description}</p>
             </Link>
-            <button type="button" onClick={handleChange}>
-              Ajouter aux favoris
-            </button>
+            {myprojet !== false && (
+              <button type="button" onClick={handleChange}>
+                Ajouter aux favoris
+              </button>
+            )}
           </article>
         )}
       </div>
