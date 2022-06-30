@@ -15,6 +15,15 @@
   color: #183650;
 }
 
+.title {
+  font-family: "andy";
+  font-size: 2rem;
+  color: #183650;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .collonestableau {
   border-right: 5px solid #183650;
 }
