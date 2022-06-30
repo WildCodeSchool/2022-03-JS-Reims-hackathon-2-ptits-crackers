@@ -8,9 +8,9 @@
   margin: 25px;
   min-height: 200px;
   max-height: 200px;
+  padding-top: 0.5em;
   position: relative;
   border: 1px solid #e8e8e8;
-  /* border-top: 60px solid #fdfd86; */
   font-family: "Reenie Beanie";
   font-size: 22px;
   border-bottom-right-radius: 60px 5px;
@@ -78,12 +78,6 @@
   -o-transform: matrix(-1, -0.1, 0, 1, 0, 0);
   -ms-transform: matrix(-1, -0.1, 0, 1, 0, 0);
   transform: matrix(-1, -0.1, 0, 1, 0, 0);
-}
-
-.postit article {
-  /* position: absolute; */
-  z-index: 1;
-  padding: 10px;
 }
 
 .postit h3 {
