@@ -7,8 +7,9 @@ import PostIt from "../components/PostIt";
 
 export default function Home() {
   const [projects, setProjects] = useState([]);
+  const [ville, setVille] = useState("Tour");
   const project1 = projects.slice(0, 25);
-  const project2 = projects.slice(25, 50);
+  const project2 = projects.filter((project) => project.agence === ville);
   const project3 = projects.slice(50, 75);
   const project4 = projects.slice(75, 100);
   const prepareDataForProjects = (data) => {
@@ -29,6 +30,10 @@ export default function Home() {
       .then((data) => prepareDataForProjects(data.data));
   }, []);
 
+  const handleChange = (e) => {
+    setVille(e.target.value);
+  };
+
   return (
     <div className="flex">
       <Navbar />
@@ -40,7 +45,15 @@ export default function Home() {
           ))}
         </div>
         <div className="w-1/4 collonestableau">
-          <h1 className="text-center titles">Projets de mon agence</h1>
+          <h1 className="text-center titles">
+            Projets de
+            <select value={ville} onChange={handleChange}>
+              <option value="Tour">mon agence</option>
+              <option value="Paris"> Paris</option>
+              <option value="Lyon"> Lyon</option>
+              <option value="Dijon"> Dijon</option>
+            </select>
+          </h1>
           {project2.map((project) => (
             <PostIt projet={project} />
           ))}
