@@ -71,13 +71,13 @@
   bottom: 20px;
   width: 180px;
   height: 25px;
-  background: rgba(0, 0, 0, 0.2);
+  /* background: rgba(0, 0, 0, 0.2);
   box-shadow: 2px 15px 5px rgba(0, 0, 0, 0.4);
   -moz-transform: matrix(-1, -0.1, 0, 1, 0, 0);
   -webkit-transform: matrix(-1, -0.1, 0, 1, 0, 0);
   -o-transform: matrix(-1, -0.1, 0, 1, 0, 0);
   -ms-transform: matrix(-1, -0.1, 0, 1, 0, 0);
-  transform: matrix(-1, -0.1, 0, 1, 0, 0);
+  transform: matrix(-1, -0.1, 0, 1, 0, 0); */
 }
 
 .postit h3 {

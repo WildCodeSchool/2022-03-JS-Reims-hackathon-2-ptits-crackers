@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import "./PostIt.css";
+import { Link } from "react-router-dom";
 import { useState } from "react";
 
 export default function Project({ projet, move }) {
@@ -25,7 +26,9 @@ export default function Project({ projet, move }) {
               <br />
               agence de {projet.agence}.
             </p>
-            <p>{projet.description}</p>
+            <Link to="project">
+              <p>{projet.description}</p>
+            </Link>
             <button type="button" onClick={handleChange}>
               Ajouter aux favoris
             </button>
