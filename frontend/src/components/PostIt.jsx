@@ -6,15 +6,15 @@ export default function Project() {
       <div className="postit">
         <article>
           <h3>EVOLION 3 SAFT</h3>
-          <p className="italic">
+          <p className="italic mb-1">
             Ingénierie industrielle,
             <br />
             agence de Bordeaux.
           </p>
-          <p>
+          <p className="mt-1">
             Saft Batteries a décidé de rénover son système Evolion, contraction
             de « evolution » et « Li-ion », avec une troisième génération plus
-            performante, plus sûre et plus maintenable.
+            performante, plus sûre et plus maintenable.{" "}
           </p>
         </article>
       </div>
