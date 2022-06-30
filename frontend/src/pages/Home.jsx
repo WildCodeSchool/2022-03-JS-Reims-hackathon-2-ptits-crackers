@@ -35,17 +35,17 @@ export default function Home() {
         Voir <Link to="/user">Users</Link>
       </p>
       <div className="flex flex-wrap tableau">
-        <div className="w-1/4">
-          <h1 className="text-center titles">Projets en cours</h1>
+        <div className="w-1/4 collonestableau">
+          <h1 className="text-center titles">Mes projets</h1>
         </div>
-        <div className="w-1/4">
-          <h1 className="text-center titles">Projets en recommandés</h1>
-        </div>
-        <div className="w-1/4">
-          <h1 className="text-center titles">Projets favoris</h1>
-        </div>
-        <div className="w-1/4">
+        <div className="w-1/4 collonestableau">
           <h1 className="text-center titles">Projets de mon agence</h1>
+        </div>
+        <div className="w-1/4 collonestableau">
+          <h1 className="text-center titles">Projets recommandés</h1>
+        </div>
+        <div className="w-1/4 collonestableau">
+          <h1 className="text-center titles">Mes favoris</h1>
         </div>
       </div>
     </>

@@ -12,6 +12,12 @@
   font-size: 2rem;
   padding: 1rem;
   border-bottom: 5px solid #183650;
+  color: #183650;
+}
+
+.collonestableau {
+  border-right: 5px solid #183650;
+  background-color: #f5f0f0;
 }
 
 .colstart > li:nth-child(2n + 1) {
