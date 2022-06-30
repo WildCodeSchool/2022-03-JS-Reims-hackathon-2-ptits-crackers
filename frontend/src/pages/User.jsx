@@ -1,10 +1,6 @@
-// import { Link } from "react-router-dom";
-// import { useState, useEffect } from "react";
-// import papa from "papaparse";
-
 import Navbar from "../components/Navbar";
-import Calendar from "../components/Calendar";
 import Note from "../components/Note";
+import semiAgenda from "../assets/images/semiagenda.png";
 
 export default function User() {
   return (
@@ -20,7 +16,7 @@ export default function User() {
             </div>
             <Note />
           </div>
-          <Calendar />
+          <img src={semiAgenda} alt="calendar" className="w-2/6" />
           <div>
             <div className="paper">
               <div className="pin">

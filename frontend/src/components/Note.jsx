@@ -5,7 +5,7 @@ export default function Note() {
     <div className="notepad">
       <div className="top" />
       <div className="papier" contentEditable="true">
-        Hello, this is a paper. Click to write your message.
+        Bonjour, je suis un papier. Clique pour écrire une note.
       </div>
     </div>
   );

@@ -7,7 +7,7 @@ import PostIt from "../components/PostIt";
 
 export default function Home() {
   const [projects, setProjects] = useState([]);
-  const project1 = projects.slice(0, 7);
+  const project1 = projects.filter((project) => project.agence === "Paris");
   const prepareDataForProjects = (data) => {
     const keys = data.shift();
     const json = data.map((line) => {

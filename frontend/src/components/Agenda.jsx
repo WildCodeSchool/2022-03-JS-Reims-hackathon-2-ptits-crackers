@@ -1,5 +1,5 @@
-import { DayPilotCalendar } from "@daypilot/daypilot-lite-react";
 import Navbar from "./Navbar";
+import fullAgenda from "../assets/images/fullagenda.png";
 
 export default function Agenda() {
   return (
@@ -7,7 +7,7 @@ export default function Agenda() {
       <Navbar />
       <div className="tableau p-4">
         <h1 className="p-5 text-center text-2xl">Agenda</h1>
-        <DayPilotCalendar days={7} scale="Day" />
+        <img src={fullAgenda} alt="calendar" className="w-full h-auto" />
       </div>
     </div>
   );
