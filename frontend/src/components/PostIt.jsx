@@ -28,7 +28,7 @@ export default function Project({ projet, move, myprojet }) {
               <br />
               agence de {projet.agence}.
             </p>
-            <Link to={`/project/${projet.name}`}>
+            <Link to="/project/Pellenc">
               <p>{projet.description}</p>
             </Link>
             {myprojet !== false && (
