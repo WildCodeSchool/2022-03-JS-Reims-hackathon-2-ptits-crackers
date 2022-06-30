@@ -1,5 +1,5 @@
 /* eslint-disable no-return-assign */
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 // import { useState, useEffect } from "react";
 // import papa from "papaparse";
 import Navbar from "../components/Navbar";
@@ -27,16 +27,16 @@ export default function Home() {
   //     .then((data) => prepareDataForProjects(data.data));
   // }, []);
   return (
-    <>
+    <div className="flex">
       <Navbar />
-      <h1 className="text-3xl font-bold underline">Hello les crackers</h1>
+      {/* <h1 className="text-3xl font-bold underline">Hello les crackers</h1>
       <p>
         Voir <Link to="/project">Projet</Link>
       </p>
       <p>
         Voir <Link to="/user">Users</Link>
-      </p>
-      <div className="flex flex-wrap tableau">
+      </p> */}
+      <div className="flex flex-wrap tableau w-[100%]">
         <div className="w-1/4 collonestableau">
           <h1 className="text-center titles">Mes projets</h1>
         </div>
@@ -50,7 +50,7 @@ export default function Home() {
           <h1 className="text-center titles">Mes favoris</h1>
         </div>
       </div>
-    </>
+    </div>
   );
 
   //   <div className="allimg grid grid-cols-3">
