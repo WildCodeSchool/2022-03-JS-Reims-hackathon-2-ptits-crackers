@@ -10,7 +10,6 @@ export default function Home() {
   const [ville, setVille] = useState("Tour");
   const project1 = projects.slice(0, 25);
   const project2 = projects.filter((project) => project.agence === ville);
-  const project3 = projects.slice(50, 75);
   const project4 = projects.slice(75, 100);
   const prepareDataForProjects = (data) => {
     const keys = data.shift();
@@ -41,7 +40,7 @@ export default function Home() {
         <div className="w-1/4 collonestableau">
           <h1 className="text-center titles">Mes projets</h1>
           {project1.map((project) => (
-            <PostIt projet={project} />
+            <PostIt projet={project} move="right" />
           ))}
         </div>
         <div className="w-1/4 collonestableau">
@@ -60,14 +59,11 @@ export default function Home() {
         </div>
         <div className="w-1/4 collonestableau">
           <h1 className="text-center titles">Mes favoris</h1>
-          {project3.map((project) => (
-            <PostIt projet={project} />
-          ))}
         </div>
         <div className="w-1/4">
           <h1 className="text-center titles">Projets recommandés</h1>
           {project4.map((project) => (
-            <PostIt projet={project} />
+            <PostIt projet={project} move="left" />
           ))}
         </div>
       </div>
