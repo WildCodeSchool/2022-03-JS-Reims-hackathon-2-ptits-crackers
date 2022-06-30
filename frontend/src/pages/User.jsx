@@ -4,6 +4,7 @@
 
 import Navbar from "../components/Navbar";
 import Calendar from "../components/Calendar";
+import Note from "../components/Note";
 
 export default function User() {
   /* const [users, setUsers] = useState([]);
@@ -42,6 +43,7 @@ export default function User() {
             <h2>Rôle: Développeur</h2>
             <h2>Nombre projet participé(en fonction du role): 5</h2>
           </div>
+          <Note />
           <Calendar />
         </div>
       </div>
