@@ -7,6 +7,34 @@
   src: url(./assets/fonts/andy.ttf);
 }
 
+@keyframes slideIn {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  100% {
+    transform: translate(635px, 0px);
+  }
+}
+
+@keyframes slideOff {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  100% {
+    transform: translate(-320px, 0px);
+  }
+}
+
+.postitmove {
+  animation: slideIn 1s;
+  animation-fill-mode: forwards;
+}
+
+.postitmove2 {
+  animation: slideOff 1s;
+  animation-fill-mode: forwards;
+}
+
 .titles {
   font-family: "andy";
   font-size: 1.5rem;
