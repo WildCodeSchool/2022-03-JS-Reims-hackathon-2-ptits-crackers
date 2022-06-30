@@ -3,7 +3,7 @@ import whiteLogo from "../assets/images/apside-logo.png";
 
 export default function Navbar() {
   return (
-    <nav className="block w-[200px] h-screen bg-[#183650]">
+    <nav className="block min-w-[200px] h-screen bg-[#183650]">
       <div className="flex flex-col justify-evenly">
         <p className="font-['Hind-Regular'] text-[1.5rem] font-medium p-[1.25rem] text-slate-50 text-center">
           Bonjour !
