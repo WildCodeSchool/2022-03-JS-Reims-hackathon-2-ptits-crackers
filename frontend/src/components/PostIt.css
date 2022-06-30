@@ -81,7 +81,7 @@
 .postit article {
   position: absolute;
   z-index: 1;
-  bottom: 20%;
+  bottom: 30%;
   padding: 0.5rem;
 }
 
@@ -95,7 +95,7 @@
 }
 
 .postit p {
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   color: black;
   margin: 0;
   padding: 0.25rem;
