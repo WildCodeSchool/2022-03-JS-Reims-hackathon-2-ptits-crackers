@@ -1,3 +1,63 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "andy";
+  src: url(./assets/fonts/andy.ttf);
+}
+
+.titles {
+  font-family: "andy";
+  font-size: 2rem;
+  padding: 1rem;
+  border-bottom: 5px solid #183650;
+}
+
+.colstart > li:nth-child(2n + 1) {
+  margin-right: auto;
+}
+
+.colstart > li:nth-child(2n) {
+  margin-left: auto;
+}
+
+.colcenter > li:nth-child(3n + 1) {
+  margin-left: auto;
+}
+
+.colcenter > li:nth-child(3n + 2) {
+  margin: auto;
+}
+
+.colcenter > li:nth-child(3n) {
+  margin-right: auto;
+}
+
+.colend > li:nth-child(3n + 1) {
+  margin-left: auto;
+}
+
+.colend > li:nth-child(3n) {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.colend > li:nth-child(3n + 2) {
+  margin-right: auto;
+}
+
+.allimg > ul > li {
+  border: 2px solid #000;
+  border-radius: 25px;
+}
+
+.allimg > ul > li > img {
+  border-top-left-radius: 23px;
+  border-top-right-radius: 23px;
+}
+
+.tableau {
+  border: 20px ridge gray;
+  min-height: 100vh;
+}
